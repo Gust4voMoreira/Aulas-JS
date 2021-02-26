@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        let pessoa = {
+            nome: 'Gustavo',
+            sobrenome: 'Moreira',
+            idade: 18,
+            estaAprovado: true
+        }
+        //console.log(pessoa.nome)
+        //ou
+        //console.log(pessoa['nome'])
+
+        pessoa.ano = 2002
+        //console.log(pessoa)
+        //console.log(pessoa.ano)
+
+        delete pessoa.idade
+        //console.log(pessoa)
+
+        //array
+        pessoa.hobbies = ['Música', 'Programar', 'Viajar']
+        //console.log(pessoa)
+
+        pessoa.competencias = {
+            linguagens: ['Javascript', 'Java', 'c#'], instrumentosMusicais: ['Guitarra', 'Baixo']
+        }
+
+        console.log(pessoa)
+    </script>
+</body>
+</html>

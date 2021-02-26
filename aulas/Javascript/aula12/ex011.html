@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex011</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(33, 134, 192);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Horário do Dia</h1>
+    <p>Que horas são? <input type="number" id="horas"><input type="button" value="verificar" onclick="validar()"></p>
+    <div id="res"></div>
+    <script>
+        function validar() {
+            var hora = document.querySelector('input#horas')
+            var h = Number(hora.value)
+            res.innerHTML = `<p>Agora são exatamente ${h} horas.</p>`
+
+            if (h >= 0 && h <=4) {
+                res.innerHTML += `<p>Boa Matrugada!</p>` 
+            } else if(h >= 5 && h <=12) {
+                res.innerHTML += `<p>Bom Dia!</p>`
+            } else if (h >= 13 && h <=18) {
+                res.innerHTML += `<p>Boa Tarde!</p>`
+            } else if (h >= 19 && h <= 24){
+                res.innerHTML += `<p>Boa Noite!</p>`
+            } else {
+                res.innerHTML += `<p>ERRO</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>

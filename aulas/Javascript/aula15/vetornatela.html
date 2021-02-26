@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Digite um Número: <input type="number" id="n1"><input type="button" value="Validar" onclick="validar()"></p>
+    <div id="res"></div>
+    <script>
+        function validar() {
+            let n1 = document.querySelector('input#n1')
+            let numero = Number(n1.value)
+            let num = [2, 1, numero, 7, 6]
+
+            res.innerHTML += `vetor: <strong>${num}</strong><br>`
+            res.innerHTML += `o vetor tem ${num.length} posições<br>`
+            /*
+            for(var i = 0; i < num.length; i++){
+            res.innerHTML += `o valor na posição ${i} é ${num[i]}<br>`
+            }
+            */
+            for(let i in num){
+                res.innerHTML += `o valor na posição ${i} é ${num[i]}<br>`
+            }
+            res.innerHTML += `vetor em ordem crescente ${num.sort()}<br>`
+            /*
+            num.sort()
+            res.innerHTML += `${num[0]}`*/
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        #n1{
+            color: green;
+        }
+        #n2{
+            color: greenyellow;
+        }
+        #n3{
+            color: yellow;
+        }
+        #n4{
+            color: rgb(255, 145, 0);
+        }
+        #n5{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Digite um número de 1 a 5: <input type="number" id="num"><input type="button" value="Click" onclick="validar()"></p>
+    <div id="res"></div>
+    <script>
+        function validar() {
+            var num = document.querySelector('input#num')
+            var num1 = Number(num.value)
+
+            switch(num1){
+                case 1:
+                    res.innerHTML = `<p id=n1>Você digitou 1</p>`
+                    break
+                case 2:
+                    res.innerHTML = `<p id="n2">Você digitou 2</p>`
+                    break
+                case 3:
+                    res.innerHTML = `<p id="n3">Você digitou 3</p>`
+                    break
+                case 4:
+                    res.innerHTML = `<p id="n4">Você digitou 4</p>`
+                    break
+                case 5:
+                    res.innerHTML = `<p id="n5">Você digitou 5</p>`
+                    break
+                default:
+                    res.innerHTML = `<p>ERRO</p>`   
+                    break
+            }
+
+        }
+    </script>
+</body>
+
+</html>

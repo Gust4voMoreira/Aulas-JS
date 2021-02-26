@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        //1]
+        // function escrevaMensagem(mensagem) {
+        //     console.log(mensagem)
+        //     document.write(mensagem)
+        // }
+        // escrevaMensagem('Hello World!')
+
+        //2]
+        // function soma(a, b) {
+        //     return a + b
+        // }
+        // // var resultadoSoma = soma(5, 2)
+        // // console.log(resultadoSoma)
+        //ou
+        // console.log(soma(3, 4))
+
+        //3]
+        // function somaTudo(numeros) {
+        //     var total = 0
+        //     for(var num of numeros) {
+        //         total = total + num
+        //     }
+        //     return total
+        // }
+        // var arrayNumeros = [2,5,3,8,67,43,7]
+        // var resultado = somaTudo(arrayNumeros)
+        // console.log('soma dos números:',resultado)
+        //ou
+        // console.log('soma dos números:',somaTudo([2,5,3,8,67,43,7]))
+
+        //4]
+        // var subtraiNumeros = function (a, b) {
+        //ou
+        // var subtraiNumeros = function subtrai(a, b) {
+        //     return a - b
+        // }
+        // console.log(subtraiNumeros(10, 3))
+
+        //5]
+        // function escreverEndereco(bairro, cidade, pais, ...complemento) {
+        //     console.log(bairro)
+        //     console.log(cidade)
+        //     console.log(pais)
+        //     console.log(complemento)
+        // }
+        // escreverEndereco('Embratel', 'Porto Velho', 'Brasil', '8166', 'CEP 123.123.123', 'bloco 13')
+
+        //6]
+        // (function autoExecuta(nome) {
+        //     console.log('Executei,', nome)
+        // }('Gustavo'))
+
+        //7]
+        // function somaCallback(a, b, fnCallback) {
+        //     return fnCallback(a + b)
+        // }
+        //
+        // var multiplica = function(total) {
+        //     return total * 2
+        // }
+        // console.log(somaCallback(2, 3, multiplica))
+        // ou
+        // console.log(somaCallback(2, 3, function (total) {
+        //     return total * 2
+        // }))
+        //
+        // console.log(somaCallback(5, 2, function(total) {
+        //     return total + 20
+        // }))
+
+        //8]
+        function escreveNome(nome = 'Gustavo', idade = 18) {
+            console.log(nome)
+            console.log(idade)
+        }
+        escreveNome()
+        //e
+        //escreveNome('José', 19)
+    </script>
+</body>
+</html>

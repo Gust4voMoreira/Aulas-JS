@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex012</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(33, 134, 192);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="res"></div>
+    <script>
+        var data = new Date()
+        var diaSem = data.getDay()
+
+        switch (diaSem) {
+            case 0:
+                res.innerHTML = 'Domingo'
+                break
+            case 1:
+                res.innerHTML = 'Segunda'
+                break
+            case 2:
+                res.innerHTML = 'Terça'
+                break
+            case 3:
+                res.innerHTML = 'Quarta'
+                break
+            case 4:
+                res.innerHTML = 'Quinta'
+                break
+            case 5:
+                res.innerHTML = 'Sexta'
+                break
+            case 6:
+                res.innerHTML = 'Sábado'
+                break
+            default:
+                res.innerHTML = 'ERRO'
+                break
+        }
+    </script>
+</body>
+
+</html>

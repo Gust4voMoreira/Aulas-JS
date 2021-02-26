@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste01</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(33, 134, 192);
+            font: normal 18pt Arial;
+        }
+        input.t {
+            background-color: rgb(64, 172, 172);
+        }
+        input#botao{
+            background-color: darkblue;
+            color: white;
+        }
+        div#res{
+            color: rgb(52, 163, 89);
+        }
+    </style>
+</head>
+<body>
+    <!--número total de caracteres em duas variáveis-->
+
+    <p>Digite uma palavra:</p><input type="text" id="txt1" class="t">
+    <p>Digite outra palavra:</p><input type="text" id="txt2" class="t">
+    <input type="button" id="botao" value="verificar" onclick="validar()">
+    <div id="res"></div>
+    <script>
+        function validar(){
+            var nome1 = document.querySelector('input#txt1').value
+            var nome2 = document.querySelector('input#txt2').value
+            var soma = nome1.length + nome2.length
+            res.innerHTML = `<p>${nome1} + ${nome2} = <strong>${soma}</strong></p>`
+
+        }
+    </script>
+</body>
+</html>

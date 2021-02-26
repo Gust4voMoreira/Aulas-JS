@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(33, 134, 192);
+            font: normal 18pt Arial;
+        }
+        input#idade{
+            background-color: green;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Idade para votar</h1>
+    <p>Qual a sua idade: <input type="number" id="idade"><input type="button" value="Verificar" onclick="validar()"></p>
+    <div id="res"></div>
+
+    <script>
+        function validar(){
+            var idd = document.querySelector('input#idade')
+            var i = Number(idd.value)
+            res.innerHTML = `<p>Você tem <strong>${i}</strong> anos.</p>`
+
+            if(i<16){
+                res.innerHTML += `<p>Não vota</p>`
+            }else if (i<18 || i>65){
+                res.innerHTML += `<p>Voto opcional</p>`
+            }else{
+                res.innerHTML += `<p>Voto obrigatório</p>`
+            }
+        }
+    </script>
+</body>
+</html>

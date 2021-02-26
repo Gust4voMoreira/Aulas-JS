@@ -1,0 +1,63 @@
+body {
+  background: rgb(255, 254, 209);
+  font: normal 15pt Arial;
+}
+
+header {
+  color: black;
+  text-align: center;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 45px;
+  width: 650px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.362);
+}
+
+#botao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#red {
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  width: 80px; 
+  height: 80px;
+}
+
+#green {
+  background-color: green;
+  border-radius: 50%;
+  border: none;
+  width: 80px; 
+  height: 80px;
+}
+
+#blue {
+  background-color: blue;
+  border-radius: 50%;
+  border: none;
+  width: 80px; 
+  height: 80px;
+}
+
+#yellow {
+  background-color: yellow;
+  border-radius: 50%;
+  border: none;
+  width: 80px; 
+  height: 80px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
