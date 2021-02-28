@@ -21,8 +21,6 @@ const rogerScore = phaseScores.reduce((accumulator, phaseScore) => {
     if (phaseScore.name === 'Roger M.') {
         accumulator += phaseScore.score
     }
-
     return accumulator
 }, 0)
-
 console.log(rogerScore)

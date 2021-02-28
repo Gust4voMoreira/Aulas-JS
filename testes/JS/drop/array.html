@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        //1]
+        //Cria um array e filtra os falores 
+
+        /*const randomNubers = [36, 99, 37, 63]
+        const numbersGreaterThan37 = randomNubers.filter(item => item > 37)
+        console.log({ numbersGreaterThan37, randomNubers })*/
+
+        // const users = [
+        //     { name: 'Ada Lovelace', premium: true },
+        //     { name: 'Grace Hopper', premium: false },
+        //     { name: 'Alan Turing', premium: true },
+        //     { name: 'Linus Torvalds', premium: false },
+        //     { name: 'Margaret Hamilton', premium: true }
+        // ]
+        // const premiumUser = users.filter(user => user.premium)
+        // console.log(premiumUser)
+
+        //2]
+        //Cria um array e altera os valores 
+        /*const numbers = [1, 2, 3]
+        const doubleNubers = numbers.map(item => item * 2)
+        console.log(doubleNubers, numbers)*/
+
+        /*const prices = [20, 10, 30, 25, 15, 40, 80, 5]
+        const salePrices = prices.map(price => price / 2)
+        console.log(salePrices)*/
+
+        // const products = [
+        //     { name: 'Mouse Sem Fio', price: 30 },
+        //     { name: 'Pen Drive', price: 25 },
+        //     { name: 'Cartucho de Tinta', price: 50 },
+        //     { name: 'Suporte Ergonômico para Notebook', price: 23 },
+        //     { name: 'Repetidor de Sinal WI-Fi', price: 44 }
+        // ]
+        // const saleProducts = products.map(product => {
+        //     if (product.price >= 30) {
+        //         return { name: product.name, price: product.price / 2 }
+        //     }
+        //     return product
+        // })
+        // console.log(saleProducts)
+        // console.log(products)
+
+        //3]reduse
+        /*const numbers = [1, 2, 3]
+        const sumResult = numbers.reduce((accumulator, item) => accumulator + item, 0)
+        console.log(sumResult)*/
+
+        const phaseScores = [
+            { name: 'Vinicius C.', score: 337 },
+            { name: 'Roger M.', score: 43 },
+            { name: 'Alfredo B.', score: 234 },
+            { name: 'Pedro H.', score: 261 },
+            { name: 'Ana P.', score: 491 },
+            { name: 'Vinicius C.', score: 167 },
+            { name: 'Roger M.', score: 137 },
+            { name: 'Alfredo B.', score: 135 },
+            { name: 'Ana P.', score: 359 },
+            { name: 'Pedro H.', score: 133 }
+        ]
+        const rogerScore = phaseScores.reduce((accumulator, phaseScore) => {
+            if (phaseScore.name === 'Roger M.') {
+                accumulator += phaseScore.score
+            }
+            return accumulator
+        }, 0)
+        console.log(rogerScore)
+    </script>
+</body>
+
+</html>
