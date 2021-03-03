@@ -40,6 +40,19 @@
         // }
 
         //3]
+        for(var c = 0; c <= 50; c++){
+            if(c % 3 === 0 && c % 5 === 0) {
+                console.log(`${c} ping-pong`)
+            } else if(c % 3 === 0){
+                console.log(`${c} ping`)
+            } else if(c % 5 === 0) {
+                console.log(`${c} pong`)
+            } else {
+                console.log(c)
+            }
+        }
+
+        //4]
         // for (var i = 0; i < 50; i++) {
         //     if(i % 2 !== 0) {
         //         continue;
@@ -47,24 +60,24 @@
         //     console.log('utilizando continue', i)
         // }
 
-        //4]
+        //5]
         // var numeros = [3, 5, 'Gustavo', 34, 12, 45, 7, 6]
         // for(var num of numeros) {
         //     console.log('for of', num)
         // }
 
-        //5]
-        for(var i = 1; i <= 5; i++) {
-            for(var j = 1; j <= 50; j++) {
-                if(j % 2 === 0){
-                    continue
-                }
-                if(j > 7){
-                    break
-                }
-                console.log(`i: ${i}; j: ${j}`)
-            }
-        }
+        //6]
+        // for(var i = 1; i <= 5; i++) {
+        //     for(var j = 1; j <= 50; j++) {
+        //         if(j % 2 === 0){
+        //             continue
+        //         }
+        //         if(j > 7){
+        //             break
+        //         }
+        //         console.log(`i: ${i}; j: ${j}`)
+        //     }
+        // }
     </script>
 </body>
 
