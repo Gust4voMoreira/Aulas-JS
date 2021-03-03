@@ -16,6 +16,7 @@
         input#botao{
             background-color: darkblue;
             color: white;
+            border-radius: 10px;
         }
         div#res{
             color: rgb(52, 163, 89);
@@ -26,7 +27,8 @@
     <!--número total de caracteres em duas variáveis-->
 
     <p>Digite uma palavra:</p><input type="text" id="txt1" class="t">
-    <p>Digite outra palavra:</p><input type="text" id="txt2" class="t">
+    <p>Digite outra palavra:</p><input type="text" id="txt2" class="t"><br>
+    <p>Verificar o número de caracteres:</p>
     <input type="button" id="botao" value="verificar" onclick="validar()">
     <div id="res"></div>
     <script>
@@ -35,7 +37,6 @@
             var nome2 = document.querySelector('input#txt2').value
             var soma = nome1.length + nome2.length
             res.innerHTML = `<p>${nome1} + ${nome2} = <strong>${soma}</strong></p>`
-
         }
     </script>
 </body>
