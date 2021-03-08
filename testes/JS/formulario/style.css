@@ -48,16 +48,22 @@ input, select, textarea, button {
     border-radius: 5px;
 }
 
+.grupo:after {
+    clear: both;
+}
+
 .campo {
     margin-bottom: 1em;
 }
 
 .campo label {
+    margin-bottom: 0.2em;
     display: block;
+    color: #59429d;
 }
 
 fieldset.grupo .campo {
-    float:  left;
+    float: left;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
