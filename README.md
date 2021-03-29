@@ -1,2 +1,2 @@
 # Aula-e-Teste
-Feito para aulas e teste.
+Feito para aulas.
