@@ -1,2 +1,2 @@
 # Aula-e-Teste
-Feito para aulas de JS e CSS.
+Feito para aulas de HTML, CSS e JS.
