@@ -4,10 +4,10 @@
 }
 
 body {
-    background-color: #ffb7b7;
+    background-color: #4b4f75;
     font-family: sans-serif;
     font-size: 1em;
-    color: #42809d;
+    color: #42839d;
     margin-top: 2%;
     justify-content: center;
     
@@ -15,7 +15,7 @@ body {
 
 header {
     font-family: sans-serif;
-    color: #0b2d61;
+    color: white;
     text-align: center;
 } 
 
@@ -46,7 +46,7 @@ fieldset {
 input, select, textarea, button {
     font-family: sans-serif;
     font-size: 1em;
-    color: #ff004c;
+    color: #42839d;
     border-radius: 5px;
 }
 
@@ -65,7 +65,7 @@ input, select, textarea, button {
 .campo label {
     margin-bottom: 0.2em;
     display: block;
-    color: #59429d;
+    color: #42839d;
 }
 
 fieldset.grupo .campo {
@@ -74,7 +74,7 @@ fieldset.grupo .campo {
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
-    border: 1px solid #ff004c;
+    border: 1px solid #42839d;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
@@ -84,25 +84,15 @@ fieldset.grupo .campo {
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
-}
-/*
-#experiencia {
-    display: flex;
+    background: #e0f8e0;
 }
 
-@media (max-width: 500px) {
-    #experiencia {
-       width: 20em;
-    }
-}
-*/
 .botao {
     font-size: 1.1em;
     background: #63b8da;
     border: 0;
     margin-bottom: 0.2em;
-    color: #ffffff;
+    color: white;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -113,7 +103,7 @@ fieldset.grupo .campo {
 }
 
 .botao:hover {
-    background: #230d66;
+    background: #3f9dc2;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
