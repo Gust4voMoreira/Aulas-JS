@@ -9,3 +9,14 @@ h1 {
     margin: 20px;
     height: 480px;
 }
+
+.container-calculadora-peso, .container-calculadora-altura{
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.peso-slider, .altura-slider{
+    width: 100%;
+    height: 1px;
+}
