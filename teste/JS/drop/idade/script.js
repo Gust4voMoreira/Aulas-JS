@@ -15,24 +15,24 @@ function verificar(){
         if(fsex[0].checked){
             gênero = 'homem'
             if(idade >= 0 && idade <= 10){
-                img.setAttribute('src', '/aulas/Javascript/aula12ex/ex015/foto-bebe-m.jpg')
+                img.setAttribute('src', '/teste/JS/drop/idade/imagens/fotoBebeM.jpg')
             } else if(idade < 21) {
-                img.setAttribute('src' ,'/aulas/Javascript/aula12ex/ex015/foto-jovem-m.jpg')
+                img.setAttribute('src' ,'/teste/JS/drop/idade/imagens/fotoJovemM.jpg')
             } else if (idade < 50){
-                img.setAttribute('src', '/aulas/Javascript/aula12ex/ex015/foto-adulto-m.jpg')
+                img.setAttribute('src', '/teste/JS/drop/idade/imagens/fotoAdultoM.jpg')
             } else {
-                img.setAttribute('src', '/aulas/Javascript/aula12ex/ex015/foto-idoso-m.jpg')
+                img.setAttribute('src', '/teste/JS/drop/idade/imagens/fotoIdosoM.jpg')
             }
         } else if (fsex[1].checked){
             gênero = 'mulher'
             if(idade >= 0 && idade <= 10){
-                img.setAttribute('src' ,'/aulas/Javascript/aula12ex/ex015/foto-bebe-f.jpg')
+                img.setAttribute('src' ,'/teste/JS/drop/idade/imagens/fotoBebeF.jpg')
             } else if(idade < 21) {
-                img.setAttribute('src' ,'/aulas/Javascript/aula12ex/ex015/foto-jovem-f.jpg')
+                img.setAttribute('src' ,'/teste/JS/drop/idade/imagens/fotoJovemF.jpg')
             } else if (idade < 50){
-                img.setAttribute('src', '/aulas/Javascript/aula12ex/ex015/foto-adulto-f.jpg')
+                img.setAttribute('src', '/teste/JS/drop/idade/imagens/fotoAdultoF.jpg')
             } else {
-                img.setAttribute('src', '/aulas/Javascript/aula12ex/ex015/foto-idoso-f.jpg') 
+                img.setAttribute('src', '/teste/JS/drop/idade/imagens/fotoIdosoF.jpg') 
             }
         }
         res.style.textAlign = 'center'
