@@ -36,7 +36,9 @@ h1{
     padding-right: 500px;
 }
 
-.recuo { text-indent:4em }
+.recuo { 
+    margin-bottom: 4%;
+}
 
 section{
     background: white;
