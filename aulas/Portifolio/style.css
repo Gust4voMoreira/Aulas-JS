@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar__inicio*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #00804b;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar .nenu li{
+    list-style: none;
+    display: inline-block;
+}
