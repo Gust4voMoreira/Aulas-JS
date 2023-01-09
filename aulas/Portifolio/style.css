@@ -121,7 +121,7 @@
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
-    transform: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .home .home-content a:hover{
@@ -132,6 +132,19 @@
 /* all similar conten styling code */
 section{
     padding: 100px 0;
+}
+
+.about, .services, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, 
+.services .serv-content,
+.skills .sklls-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 section .title{
@@ -167,20 +180,8 @@ section .title::after{
 }
 
 /* about section styling */
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
-
 .about .title::after{
     content: "who i am";
-}
-
-.about .about-content, 
-.services .serv-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left{
@@ -222,7 +223,7 @@ section .title::after{
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
-    transform: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover{
@@ -252,11 +253,15 @@ section .title::after{
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    transform: all 0.3 ease;
+    transition: all 0.3 ease;
+}
+
+.services .serv-content .card:hover{
+    background: crimson;
 }
 
 .services .serv-content .card .box{
-    transform: all 0.3 ease;
+    transition: all 0.3 ease;
 }
 
 .services .serv-content .card:hover .box{
@@ -266,12 +271,87 @@ section .title::after{
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
+    transition: color 0.3 ease;
+}
+
+.services .serv-content .card:hover i{
+    color: #fff;
 }
 
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+/* skills section styling */
+.skills .title::after{
+    content: "what i know";
+}
+
+.skills .sklls-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .sklls-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .sklls-content .left p{
+    text-align: justify;
+}
+
+.skills .sklls-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .sklls-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .sklls-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .sklls-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .sklls-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.sklls-content .right .html::before{
+    width: 90%;
+}
+
+.sklls-content .right .css::before{
+    width: 60%;
+}
+
+.sklls-content .right .js::before{
+    width: 80%;
+}
+
+.sklls-content .right .php::before{
+    width: 50%;
+}
+
+.sklls-content .right .mysql::before{
+    width: 70%;
 }
 
 /* responsive media query start */
@@ -361,6 +441,11 @@ section .title::after{
     .about .about-content .right{
         display: 100%;
     }
+
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -379,6 +464,11 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
         padding: 9px 25px;
+    }
+
+    .services .serv-content .card{
+        width: 100%;
+
     }
 }
 
