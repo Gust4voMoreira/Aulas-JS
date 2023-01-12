@@ -435,11 +435,22 @@ section .title::after{
     outline: none!important;
     border-radius: 50%;
     border: 2px solid crimson!important;
+    transition: all 0.3s ease;
 }
 
 .owl-dot.active{
     width: 35px;
-    
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
 }
 
 
