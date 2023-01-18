@@ -8,6 +8,7 @@
     <title>Portifólio</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -15,16 +16,19 @@
 </head>
 
 <body>
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Porti<span>fólio</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fa fa-bars"></i>
@@ -38,7 +42,7 @@
             <div class="home-content">
                 <div class="text-1">Olá, meu nome é</div>
                 <div class="text-2">Gustavo Moreira</div>
-                <div class="text-3">Sou um <span>Programador</span></div>
+                <div class="text-3">Sou um <span class="typing"></span></div>
                 <a href="#">Contrate-me</a>
             </div>
         </div>
@@ -53,7 +57,7 @@
                     <img src="./image/img1.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Meu nome é Gustavo e eu sou <span>YouTuber</span></div>
+                    <div class="text">Meu nome é Gustavo e eu sou <span class="typing-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto velit quaerat eaque eius
                         laborum, exercitationem facere rem. Quia, autem veritatis quae ipsa reiciendis veniam? Aliquid
                         laborum ipsum sit temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -259,6 +263,12 @@
             </div>
         </div>
     </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="#">CodingNepal</a> | <span class="fa fa-copyright"></span> 2020 All rights reserved</span>
+    </footer>
+
     <script src="./script.js"></script>
 </body>
 
