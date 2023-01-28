@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar{
-
+hr{
+    width: 300px;
+    border: 2px solid green;
 }
