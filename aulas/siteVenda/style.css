@@ -8,5 +8,13 @@
 
 hr{
     width: 300px;
-    border: 2px solid green;
+    border: 2px solid ;
+}
+
+#curso hr{
+    border-color: rgb(243, 106, 236);
+}
+
+#curso h2{
+    color: rgb(243, 106, 236);
 }
