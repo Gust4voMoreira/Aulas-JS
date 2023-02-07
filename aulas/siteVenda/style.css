@@ -5,9 +5,24 @@ html, body{
 }
 
 /* navbar */
-.max-width{
-    border: 2px solid black;
-    box-sizing: border-box;
-    text-decoration: none;
+.logo{
+    display: inline-block;
+    float: left;
+    padding: 20px;
+}
+
+.menu{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 60%;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+li{
+    float: right;
+    list-style: none;
+    padding: 10px;
+    background-color: blueviolet;
 }
 
