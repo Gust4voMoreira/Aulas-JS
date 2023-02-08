@@ -1,38 +1,35 @@
 html, body{
     margin: 0;
     padding: 0;
-}
-
-.page{
-    max-width: 1000px;
-    margin: auto;
-    border: 3px solid black;
+    box-sizing: border-box;
 }
 
 /* navbar */
-.navbar{
-    background-color: burlywood;
-    position: relative;
-}
-
-.logo{
-    display: inline-block;
-    float: left;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.header{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    background: blueviolet;
+    padding: 15px;
+    font-size: 18px;
 }
 
 .menu{
-    display: inline-block;
     list-style: none;
-    margin-left: 600px;
-    background-color: aquamarine;  
+    margin: 0;
+    padding: 0;
+    float: right;
 }
 
 li{
-    float: right;
-    list-style: none;
-    background-color: blueviolet;
+    /* display: inline-block; */
+    float: left;
+    color: white;
+    margin-right: 15px;
 }
 
+.logo{
+    float: left;
+    /* display: inline-block; */
+    color: white;
+}
