@@ -25,11 +25,36 @@ li{
     /* display: inline-block; */
     float: left;
     color: white;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 .logo{
     float: left;
     /* display: inline-block; */
     color: white;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
+
+    .menu{
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li{
+        float: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .header{
+        background-color: rgb(44, 107, 86);
+    }
 }
