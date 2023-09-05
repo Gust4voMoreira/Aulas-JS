@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+#navbar{
+    position: fixed;
+    z-index: 999;
+    width: 1000px;
+    text-align: center;
+    background-color: #202121;
+    color: white;
+    padding: 30px 20px 10px 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#navbar .title{
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+#navbar .title a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar .title a span{
+    color: #0165b9;
+}
+
+#navbar .menu{
+    float: right;
+    padding-top: 5px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar .menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#navbar .menu li a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #202121;
+    transition: all 0.3s ease;
+}
+
+#navbar .menu li a:hover{
+    border: 1px solid #0165b9;
+    color: #0165b9;
+}
+
+#home{
+    background-color: #202121;
+    padding: 140px 40px;
+    text-align: center;
+}
+
+#home .picture{
+    width: 160px;
+}
+
+#home .descricao{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 50%;
+    margin: 100px 40px 0 0;
+}
+
+#home .descricao h2{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#home .descricao p{
+    line-height: 25px;
+}
+
+#habilidades{
+    background-color: white;
+    padding-bottom: 80px;
+}
+
+#habilidades h2{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#habilidades .cards{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#habilidades .cards div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+
+#habilidades .csharp div{
+   display: block;
+   margin-left: 248px;
+}
+
+#habilidades .cards div img{
+    width: 110px;
+}
+
+#projetos{
+    background-color: #202121;
+    color: white;
+    padding-bottom: 90px;
+}
+
+#projetos h2{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#projetos .cards{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#projetos .cards div{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 0px 20px;
+}
+
+#contato{
+    background-color: white;
+}
+
+#contato h2{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: 600;
+}
